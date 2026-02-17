@@ -10,7 +10,7 @@
     <div class="container">
       <div class="head-section">
         <h1>Weather</h1>
-        <h3>🌙</h3>
+        <h3 id="mode"></h3>
       </div>
     </div>
 
@@ -30,57 +30,22 @@
     <div class="display">
       <div class="location">
         <div class="head-location">
-          <img src="./4th Set - Color/partly-cloudy-day.svg" alt="" />
-          <h1>Addiss Ababa</h1>
+          <img id="current_condition" alt="" />
+          <h1 id="city-name"></h1>
         </div>
         <div class="discription">
-          <p>
-            Addiss Ababa is a very beautiful and amazing city in east and the
-            hold africa . It is place of all african country union .
-          </p>
+          <p id="discription"></p>
           <div class="spans">
-            <span>longitude : </span> <span>Latitude : </span>
-            <span>sunrise : </span> <span>sunset:</span>
+            <span id="long"> </span> <span id="lang"> </span>
+            <span id="rise"> </span> <span id="set"></span>
           </div>
         </div>
       </div>
     </div>
     <!-- Forecasting weekly  -->
     <div class="forecast">
-      <div class="forecast-head"><h2>Weekly Forecast</h2></div>
-      <div class="forecasts">
-        <ul class="day">
-          <div class="head">
-            <span>Date: "2026-02-16" </span>
-            <h3>Overcast</h3>
-          </div>
-          <div class="mid-section">
-            <img src="./4th Set - Color/rain-snow-showers-night.svg" alt="patially cloud" />
-          </div>
-
-          <div class="foot">
-            <span>Temperature :25 c°</span> 
-          </div>
-        </ul>
-        <ul class="day">
-          2
-        </ul>
-        <ul class="day">
-          3
-        </ul>
-        <ul class="day">
-          4
-        </ul>
-        <ul class="day">
-          5
-        </ul>
-        <ul class="day">
-          6
-        </ul>
-        <ul class="day">
-          7
-        </ul>
-      </div>
+      <div class="forecast-head"><h2>Weekly Forecasts</h2></div>
+      <div class="forecasts" id="forecasts"></div>
     </div>
 
     <script src="/weather.js"></script>

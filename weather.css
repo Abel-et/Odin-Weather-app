@@ -95,13 +95,12 @@ body{
 
 .display{
   max-width: 80%;
-
   background-color:transparent;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 20px; */
+  gap: 20px;
   border-radius: 10px;
    margin-bottom: 10px;
 }
@@ -117,6 +116,7 @@ body{
   display: flex;
   align-self: center;
   gap: 10px;
+   margin-bottom: 10px;
   
 }
 .head-location img{
@@ -132,7 +132,7 @@ body{
 
 .location .discription{
   /* margin-top: 5%; */
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -143,6 +143,8 @@ body{
   border-radius: 12px;
   max-width: 800px;
   align-self: center;
+  text-indent: 15px;
+
   /* overflow: hidden; */
 }
 .forecast{
@@ -169,7 +171,7 @@ body{
   margin-bottom: 20px;
 }
 .forecast .forecasts{
-  border: 3px solid gray;
+  /* border: 3px solid gray; */
   padding:4px;
   border-radius: 5px;
   max-height: 300px;
@@ -191,16 +193,13 @@ body{
   margin-left: 10px;
   margin: 5px;
   border-radius: 10px;
+  background-color: var(--background-color);
 }
 ul ::-webkit-scrollbar {
   display: none;
 }
-.forecasts ::-webkit-scrollbar-thumb {
-  background: #c91d1d;
-  border-radius: 10px;
-}
+
 ul .head{
-  /* background-color: #c91d1d; */
   display: flex;
   flex-direction: column;
   align-items: center;
